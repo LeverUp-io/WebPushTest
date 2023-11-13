@@ -17,8 +17,8 @@ const constants = require('./constants');
 // use `web-push generate-vapid-keys --json` to generate in terminal
 // then export them in your shell with the follow env key names
 let vapidKeys = {
-  publicKey: process.env.VAPID_PUBLIC_KEY,
-  privateKey: process.env.VAPID_PRIVATE_KEY
+  publicKey: 'BJBR51nLIP25i2-eAYA-bOuW7W3QZs0B2LUkHfWG6UpDXKlApkCY6UB645FtYNHQR-TccpwTSHFH3hEQexcai5I',
+  privateKey: 'DUcAvEaNOr8VJWbWVkmzG3xJyR72Tynf9iiMNAfpxv8'
 };
 
 // Tell web push about our application server
