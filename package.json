@@ -1,17 +1,19 @@
 {
-  "name": "node_push_notification",
+  "name": "WebPushTest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "An example Node.js server using Web Push",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "web-push": "^3.3.1"
+    "express": "^4.16.0",
+    "lodash": "^4.17.21",
+    "twilio": "^3.17.1",
+    "web-push": "^3.2.2"
+  },
+  "devDependencies": {
+    "snyk": "^1.118.1"
+  },
+  "scripts": {
+    "test": "snyk test"
   }
 }
