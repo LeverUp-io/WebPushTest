@@ -47,7 +47,7 @@ app.post('/subscribe', (req, res) => {
 
     sendMessage = constants.messages.SUBSCRIPTION_STORED;
   }
-  res.send(sendMessage);
+  res.send(sendMessage + ' ' + body);
 });
 
 // Allow host to trigger push notifications from the application server
@@ -87,6 +87,7 @@ app.post('/push', (req, res, next) => {
 });
 
 app.get('/', (req, res) => {
+  
   res.send(runningMessage);
 });
 
